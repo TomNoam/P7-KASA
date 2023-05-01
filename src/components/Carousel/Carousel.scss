@@ -1,0 +1,84 @@
+@import "../../style.scss";
+
+.mainCarousel{
+    display: flex; 
+    margin-top: 25px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+        
+    .arrowsContainer{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        background: transparent;
+        filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+
+        .arrow{
+            background: transparent;
+            cursor: pointer;
+            margin-right: 30px;
+            margin-left: 30px;            
+        }
+        :hover{
+            filter: invert(0.1);            
+            filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));           
+        }
+    }
+    .carouselIndex{
+        display: flex;
+        position: absolute;
+        margin-top: 425px;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        background: rgba(128, 128, 128, 0.384);
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        text-shadow: $LowShadow;
+
+        .currentPicture{
+            background: transparent;
+            color: white;
+        }
+        p{
+            background: transparent;
+            color: white;
+        }
+        .maxPictures{
+            background: transparent;
+            color: white;
+        }
+    }
+    .carouselDiv{
+        display: flex;
+        width: 100%; 
+        height: 500px;     
+        justify-content: center;
+        border-radius: 25px ; 
+        box-shadow: $LowShadow;
+        overflow: hidden; 
+        background-color: $MainColor;
+
+        img{
+            display: flex;
+            border-radius: 25px ; 
+            width: 100%; 
+            object-fit: cover;           
+            transition: 1.5s;
+            animation: zoomed 1.5s ease-in-out;
+        }      
+    }
+}
+@keyframes zoomed{
+    0% {
+        width:0%;   
+    }
+    100%{
+       width: 100%;       
+    }
+}

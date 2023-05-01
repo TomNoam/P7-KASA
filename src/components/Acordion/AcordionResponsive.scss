@@ -1,0 +1,60 @@
+//TABLET
+@media screen and (max-width: 1280px) {
+.wrapper{
+    .acordion{
+        .item{
+            .titleBlock{
+                height: 40px;
+            
+                h2{
+                    font-size: 20px;
+                    margin-left: 18px;
+                }
+                
+            }
+            .contentText{
+                font-size: 18px;
+                padding: 18px;
+
+                ol{
+                    padding-left: 0;
+                }
+            }
+        }        
+    }
+}
+}
+//PHONE    
+@media screen and (max-width: 650px) {
+.wrapper{
+    .acordion{
+        .item{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+                
+            .titleBlock{
+                height: 30px;
+
+                h2{
+                    font-size: 13px;
+                    margin-left: 10px;
+                }
+                .arrow{
+                    margin-right: 8px;
+                    width: 15px;
+                }
+            }
+            .contentText{
+                font-size: 12px;
+                line-height: 17px;
+                padding: 10px;
+
+                ol{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}      
+}

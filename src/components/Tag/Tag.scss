@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+.tagContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 25px;
+    background-color: $MainColor;
+    border-radius: 10px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-right: 10px;
+    box-shadow: $LowShadow;
+    
+    .tagText{
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+        background: transparent;
+    }
+}

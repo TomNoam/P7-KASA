@@ -1,0 +1,39 @@
+//TABLET
+@media screen and (max-width: 1280px) {
+
+.HomeBanner{
+    margin-right: 50px;
+    margin-left: 50px;   
+    margin-top: 0px; 
+    height: 180px;
+
+    .BannerHomeText{
+        font-size: 40px;
+        margin-left: 15px;
+        padding-right: 20px;
+    }
+}
+}
+// PHONE
+@media screen and (max-width: 650px) {
+
+.HomeBanner{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 120px;
+    border-radius: 10px;
+
+        img{
+            width: 150%;
+            height: 150%;
+            
+            object-position: center;                    
+        }
+        .BannerHomeText{
+            font-size: 24px;
+            margin-left: 15px;
+            padding-right: 20px;
+        }
+}
+}

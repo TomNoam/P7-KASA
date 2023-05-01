@@ -1,0 +1,97 @@
+//TABLET
+@media screen and (max-width: 1280px) {
+
+.cardsContainer{   
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+}  
+.proposContainer{    
+    .accordionContainer{
+        margin-right: 50px;
+        margin-left: 50px;
+    } 
+} 
+.ficheContainer{
+    margin-right: 50px;
+    margin-left: 50px;
+
+        .allInfoPic{
+            .titlePictureLine{
+                width: 100%;
+                margin-top: 5px;
+                
+                .ficheTitle{
+                    font-size: 30px;
+                }
+                .ficheLocation{
+                    font-size: 14px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .tagsContainer{
+                    flex-wrap: wrap;
+                }
+            }                          
+        }  
+} 
+}
+//PHONE
+@media screen and (max-width: 650px) {
+
+.cardsContainer{
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: column;   
+}
+.proposContainer{
+    margin-right: 20px;
+    margin-left: 20px;
+
+       .accordionContainer{
+            margin-right: 0px;
+            margin-left: 0px;
+        } 
+}
+.ficheContainer{
+    margin-right: 20px;
+    margin-left: 20px;
+
+        .allInfoPic{
+            flex-direction: column;
+
+            .titlePictureLine{
+                width: 100%;
+                margin-top: 5px;
+                
+                .ficheTitle{
+                    font-size: 18px;
+                }
+                .ficheLocation{
+                    font-size: 14px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .tagsContainer{
+                    flex-wrap: wrap;
+                }
+            }              
+            .tagStarsContainer{
+                width: 100%;
+                margin-top: 15px;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-content: center;
+            }
+        }
+        .acordionsContainer{
+            justify-content: center;
+            flex-wrap: wrap;
+
+                .wrapper{
+                    width: 100%;
+                }
+        }   
+}
+}

@@ -1,0 +1,48 @@
+@import "../../style.scss";
+        
+.Card{
+    display: flex;
+    width: 430px;
+    height: 430px;
+    border-radius: 10px;
+    margin: 25px;
+    margin-bottom: 25px;
+    box-shadow: $LowShadow;
+    
+    img {
+        display: flex;
+        position: absolute;
+        width: 430px;
+        height: 430px;
+        border-radius: 10px; 
+        object-fit: cover;
+    }
+    .cardBox{
+        display: flex;   
+        position: relative;
+        width: 430px;
+        height: 430px;
+        border-radius: 10px;                    
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%); 
+        
+        .cardKasa {
+            display: flex;            
+            position: absolute;
+            width: 40%;
+            font-size: 24px;
+            line-height: 28px;   
+            color: white;
+            background: transparent;
+            bottom: 25px;
+            left: 25px;  
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);       
+        }
+    }  
+}
+.cardBox:hover{
+    box-shadow: $HighShadow;
+    .cardKasa{
+        font-size: 26px;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.87);
+    }
+}

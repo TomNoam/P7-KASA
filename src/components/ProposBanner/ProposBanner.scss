@@ -1,0 +1,24 @@
+@import "../../style.scss";
+
+.ProposBanner{        
+    display: flex;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    height: 230px;
+    color: white;    
+    border-radius: 25px; 
+    justify-content: center; 
+    background: rgb(0, 0, 0);
+    overflow: hidden; 
+    box-shadow: $LowShadow;       
+     
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 70%;        
+        }                                         
+}
