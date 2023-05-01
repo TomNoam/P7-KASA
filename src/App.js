@@ -12,8 +12,6 @@ import PagePropos from "./pages/PagePropos";
 import "./style.scss";
 import "./styleResponsive.scss";
 
-// import data from "./logements.json";
-
 function App(){
   return (
     <div className="App">      
@@ -25,13 +23,10 @@ function App(){
           <Route path="/propos" element={<PagePropos />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
-        
-      </Router> 
-      <Footer />        
+      <Footer />   
+      </Router>              
     </div>
   )
 }
-
-// console.log([data]);
 
 export default App;
