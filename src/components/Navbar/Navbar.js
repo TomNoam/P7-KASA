@@ -8,7 +8,7 @@ function Navbar(){
     return (
         <nav>
             <div className="navBlock">              
-                <div className="logo"><img src={process.env === "development" ? "/images/LOGO.png": "/build/images/LOGO.png"} alt="logo"/></div>            
+                <div className="logo"><img src="/images/LOGO.png" alt="logo"/></div>            
                 <div className="navPages">
                     <Link to="/"><div className="navChoice">Accueil</div></Link> 
                     <Link to="/propos"><div className="navChoice"> A Propos </div></Link>
