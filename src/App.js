@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -13,6 +13,7 @@ import "./style.scss";
 import "./styleResponsive.scss";
 
 function App(){
+
   return (
     <div className="App">      
       <Router>
@@ -21,7 +22,7 @@ function App(){
           <Route path="/" element={<PageHome />} />
           <Route path="/fiche/:id" element={<PageFiche />} />
           <Route path="/propos" element={<PagePropos />} />
-          <Route path="*" element={<Page404 />} />
+          <Route path="/*" element={<Page404 />} />
         </Routes>
       <Footer />   
       </Router>              

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 import Carousel from "../components/Carousel/Carousel";
 import Acordion from "../components/Acordion/Acordion";
@@ -7,21 +7,28 @@ import AcordionList from "../components/AcordionList/AcordionList";
 import Tag from "../components/Tag/Tag";
 import Host from "../components/Host/Host";
 import Stars from "../components/Stars/Stars";
+import Page404 from "./Page404";
 
 import data from "../logements.json";
+
 
 export default function PageFiche() {
        
         const { id } = useParams();
-        const  found  = data.find(item => item.id === id);
+        const  found = data.find(item => item.id === id);       
+        // console.log(id);
+        // console.log(found);
+        if (found === undefined){
+                return <Page404/>
+        }
+
         const tagsArray = found.tags;
         const hostArray = found.host;        
         const rating = found.rating;
-        
+
         return (
                 <div className="ficheContainer">                                                           
                         <Carousel/>
-
                         <section className="allInfoPic">       
                                 <div className="titlePictureLine">
                                         <h1 className="ficheTitle"> { found.title }</h1>
@@ -41,5 +48,5 @@ export default function PageFiche() {
                                 <AcordionList className="acordion02" key={found.equipments} item={found} name="Equipements" equipments={found.equipments} />                               
                         </section>                        
                 </div>
-        )             
+        )       
 } 
